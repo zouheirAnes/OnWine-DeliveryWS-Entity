@@ -29,9 +29,17 @@ public class Delivery implements Serializable {
      */
     private String name;
     /**
+     * Delivry codePays.
+     */
+    private String codePays;
+    /**
      * Delivery rate based on euro.
      */
     private Double rate;
+    /**
+     * Delivery quantity.
+     */
+    private Integer quantity;
 
     /**
      * Default construcor.
@@ -45,16 +53,22 @@ public class Delivery implements Serializable {
      * 
      * @param paramId
      *            id
+     * @param paramcodePays
+     *            codePays
      * @param paramName
      *            name
      * @param paramRate
      *            delivery rate
+     * @param paramQuantity
+     *            delivery quantity
      */
-    public Delivery(Integer paramId, String paramName, Double paramRate) {
+    public Delivery(Integer paramId, String paramCodePays, String paramName, Double paramRate, Integer paramQuantity) {
         super();
         this.id = paramId;
+        this.codePays = paramCodePays;
         this.name = paramName;
         this.rate = paramRate;
+        this.quantity = paramQuantity;
     }
 
     /**
@@ -77,8 +91,28 @@ public class Delivery implements Serializable {
     }
 
     /**
-     * public accessor for name.
-     * @return String name
+     * public accessor for codePays.
+     * 
+     * @return String codePays
+     */
+    public String getCodePays() {
+        return codePays;
+    }
+
+    /**
+     * public mutator for codePays.
+     * 
+     * @param paramCodePays
+     *            codePays
+     */
+    public void setCodePays(String paramCodePays) {
+        codePays = paramCodePays;
+    }
+
+    /**
+     * public accessor for nomPays.
+     * 
+     * @return String nomPays
      */
     public String getName() {
         return name;
@@ -113,13 +147,34 @@ public class Delivery implements Serializable {
         rate = paramRate;
     }
 
+    /**
+     * public accessor for quantity.
+     * 
+     * @return Integer id
+     */
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    /**
+     * public mutator for quantity.
+     * 
+     * @param paramQuantity
+     *            quantity
+     */
+    public void setQuantity(Integer paramQuantity) {
+        quantity = paramQuantity;
+    }
     /*
      * (non-Javadoc)
      * 
      * @see java.lang.Object#toString()
      */
+
     @Override
     public String toString() {
-        return "Delivery [id=" + id + ", name=" + name + ", rate=" + rate + "]";
+        return "Delivery [id=" + id + ", name=" + name + ", codePays=" + codePays + ", rate=" + rate + ", quantity="
+                + quantity + "]";
     }
+
 }
