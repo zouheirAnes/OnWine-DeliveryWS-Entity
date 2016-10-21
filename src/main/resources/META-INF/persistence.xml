@@ -3,9 +3,9 @@
     <persistence-unit name="OnWine-DeliveriesWS-Unit">
       <jta-data-source>java:/DeliveryDS</jta-data-source>
         <properties>
-        <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
-        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
-        <property name="hibernate.show_sql" value="true"/>
+	        <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+	        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+	        <property name="hibernate.show_sql" value="true"/>
         </properties>
     </persistence-unit>
 </persistence>

@@ -1,3 +1,30 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: delivery_db
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table delivery
+--
+
+DROP TABLE IF EXISTS delivery;
+CREATE TABLE delivery (`id` int(11) NOT NULL,`codePays` varchar(2) NOT NULL,`name` varchar(45) NOT NULL,`rate` double NOT NULL,`quantity` int(11) NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Indexes for table delivery
+--
+ALTER TABLE delivery ADD PRIMARY KEY (`id`);
+  
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (1,'FR','France',6.5,1);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (2,'FR','France',6.5,2);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (3,'FR','France',6.5,3);
@@ -18,7 +45,6 @@ INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (17,'FR'
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (18,'FR','France',19.5,18);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (19,'FR','France',19.5,19);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (20,'FR','France',19.5,20);
-
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (21,'US','Etats Unis',22.5,1);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (22,'US','Etats Unis',22.5,2);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (23,'US','Etats Unis',22.5,3);
@@ -39,28 +65,26 @@ INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (37,'US'
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (38,'US','Etats Unis',32.5,18);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (39,'US','Etats Unis',32.5,19);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (40,'US','Etats Unis',32.5,20);
-
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (51,'UK','Royaume Uni',14.5,1);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (52,'UK','Royaume Uni',14.5,2);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (53,'UK','Royaume Uni',14.5,3);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (54,'UK','Royaume Uni',14.5,4);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (55,'UK','Royaume Uni',14.5,5);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (56,'UK','Royaume Uni',16.5,6);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (57,'UK','Royaume Uni',16.5,7);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (58,'UK','Royaume Uni',16.5,8);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (59,'UK','Royaume Uni',16.5,9);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (60,'UK','Royaume Uni',16.5,10);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (61,'UK','Royaume Uni',18.5,11);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (62,'UK','Royaume Uni',18.5,12);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (63,'UK','Royaume Uni',18.5,13);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (64,'UK','Royaume Uni',18.5,14);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (65,'UK','Royaume Uni',18.5,15);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (66,'UK','Royaume Uni',20,16);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (67,'UK','Royaume Uni',20,17);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (68,'UK','Royaume Uni',20,18);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (69,'UK','Royaume Uni',20,19);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (70,'UK','Royaume Uni',20,20);
-
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (51,'GB','Royaume Uni',14.5,1);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (52,'GB','Royaume Uni',14.5,2);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (53,'GB','Royaume Uni',14.5,3);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (54,'GB','Royaume Uni',14.5,4);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (55,'GB','Royaume Uni',14.5,5);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (56,'GB','Royaume Uni',16.5,6);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (57,'GB','Royaume Uni',16.5,7);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (58,'GB','Royaume Uni',16.5,8);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (59,'GB','Royaume Uni',16.5,9);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (60,'GB','Royaume Uni',16.5,10);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (61,'GB','Royaume Uni',18.5,11);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (62,'GB','Royaume Uni',18.5,12);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (63,'GB','Royaume Uni',18.5,13);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (64,'GB','Royaume Uni',18.5,14);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (65,'GB','Royaume Uni',18.5,15);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (66,'GB','Royaume Uni',20,16);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (67,'GB','Royaume Uni',20,17);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (68,'GB','Royaume Uni',20,18);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (69,'GB','Royaume Uni',20,19);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (70,'GB','Royaume Uni',20,20);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (71,'CN','Chine',22,1);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (72,'CN','Chine',22,2);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (73,'CN','Chine',22,3);
@@ -81,7 +105,6 @@ INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (87,'CN'
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (88,'CN','Chine',28,18);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (89,'CN','Chine',28,19);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (90,'CN','Chine',28,20);
-
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (91,'JP','Japon',20.6,1);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (92,'JP','Japon',20.6,2);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (93,'JP','Japon',20.6,3);
@@ -92,7 +115,6 @@ INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (97,'JP'
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (98,'JP','Japon',22,8);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (99,'JP','Japon',22,9);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (100,'JP','Japon',22,10);
-
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (101,'DE','Allemagne',10.3,1);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (102,'DE','Allemagne',10.3,2);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (103,'DE','Allemagne',10.3,3);
@@ -113,7 +135,6 @@ INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (117,'DE
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (118,'DE','Allemagne',26,19);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (119,'DE','Allemagne',26,19);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (120,'DE','Allemagne',26,20);
-
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (121,'ES','Espagne',10.3,1);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (122,'ES','Espagne',10.3,2);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (123,'ES','Espagne',10.3,3);
@@ -134,7 +155,6 @@ INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (137,'ES
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (138,'ES','Espagne',26,19);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (139,'ES','Espagne',26,19);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (140,'ES','Espagne',26,20);
-
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (141,'JP','Japon',26,11);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (142,'JP','Japon',26,12);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`quantity`)VALUES (143,'JP','Japon',26,13);
