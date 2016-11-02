@@ -3,6 +3,8 @@ package fr.afcepf.atod.ws.delivery.entity;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 
@@ -11,8 +13,8 @@ import javax.persistence.NamedQuery;
  * 
  * @author Zouheir
  */
-@Entity
-@NamedQuery(name = "delivery.findAll", query = "SELECT d FROM Delivery d")
+@Entity(name="delivery")
+@NamedQuery(name = "delivery.findAll", query = "SELECT d FROM delivery d")
 public class Delivery implements Serializable {
 
     /**
@@ -23,6 +25,7 @@ public class Delivery implements Serializable {
      * Unique identifier.
      */
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     /**
      * Delivry name.
