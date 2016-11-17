@@ -40,144 +40,79 @@ public class Delivery implements Serializable {
      */
     private Double rate;
     /**
+     * Delivery rateInternational based on euro.
+     */
+    private Double rateInternational;
+    /**
      * Delivery quantity.
      */
     private Integer quantity;
-
     /**
-     * Default construcor.
+     * @param id
+     * @param name
+     * @param codePays
+     * @param rate
+     * @param rateInternational
+     * @param quantity
+     */
+    public Delivery(Integer id, String name, String codePays, Double rate, Double rateInternational, Integer quantity) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.codePays = codePays;
+        this.rate = rate;
+        this.rateInternational = rateInternational;
+        this.quantity = quantity;
+    }
+    /**
+     * 
      */
     public Delivery() {
         super();
     }
-
-    /**
-     * Constructor with parameters.
-     * 
-     * @param paramId
-     *            id
-     * @param paramcodePays
-     *            codePays
-     * @param paramName
-     *            name
-     * @param paramRate
-     *            delivery rate
-     * @param paramQuantity
-     *            delivery quantity
-     */
-    public Delivery(Integer paramId, String paramCodePays, String paramName, Double paramRate, Integer paramQuantity) {
-        super();
-        this.id = paramId;
-        this.codePays = paramCodePays;
-        this.name = paramName;
-        this.rate = paramRate;
-        this.quantity = paramQuantity;
-    }
-
-    /**
-     * public accessor for id.
-     * 
-     * @return Integer id
-     */
     public Integer getId() {
         return id;
     }
-
-    /**
-     * public mutator for id.
-     * 
-     * @param paramId
-     *            id
-     */
-    public void setId(Integer paramId) {
-        id = paramId;
+    public void setId(Integer id) {
+        this.id = id;
     }
-
-    /**
-     * public accessor for codePays.
-     * 
-     * @return String codePays
-     */
-    public String getCodePays() {
-        return codePays;
-    }
-
-    /**
-     * public mutator for codePays.
-     * 
-     * @param paramCodePays
-     *            codePays
-     */
-    public void setCodePays(String paramCodePays) {
-        codePays = paramCodePays;
-    }
-
-    /**
-     * public accessor for nomPays.
-     * 
-     * @return String nomPays
-     */
     public String getName() {
         return name;
     }
-
-    /**
-     * public mutator for name.
-     * 
-     * @param paramName
-     *            name
-     */
-    public void setName(String paramName) {
-        name = paramName;
+    public void setName(String name) {
+        this.name = name;
     }
-
-    /**
-     * public accessor for rate.
-     * 
-     * @return Double rate
-     */
+    public String getCodePays() {
+        return codePays;
+    }
+    public void setCodePays(String codePays) {
+        this.codePays = codePays;
+    }
     public Double getRate() {
         return rate;
     }
-
-    /**
-     * public mutator for rate.
-     * 
-     * @param paramRate
-     *            rate
-     */
-    public void setRate(Double paramRate) {
-        rate = paramRate;
+    public void setRate(Double rate) {
+        this.rate = rate;
     }
-
-    /**
-     * public accessor for quantity.
-     * 
-     * @return Integer id
-     */
+    public Double getRateInternational() {
+        return rateInternational;
+    }
+    public void setRateInternational(Double rateInternational) {
+        this.rateInternational = rateInternational;
+    }
     public Integer getQuantity() {
         return quantity;
     }
-
-    /**
-     * public mutator for quantity.
-     * 
-     * @param paramQuantity
-     *            quantity
-     */
-    public void setQuantity(Integer paramQuantity) {
-        quantity = paramQuantity;
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
     }
-    /*
-     * (non-Javadoc)
-     * 
-     * @see java.lang.Object#toString()
-     */
-
+    
     @Override
     public String toString() {
-        return "Delivery [id=" + id + ", name=" + name + ", codePays=" + codePays + ", rate=" + rate + ", quantity="
-                + quantity + "]";
+        return "Delivery [id=" + id + ", name=" + name + ", codePays=" + codePays + ", rate=" + rate
+                + ", rateInternational=" + rateInternational + ", quantity=" + quantity + "]";
     }
+
+ 
 
 }
