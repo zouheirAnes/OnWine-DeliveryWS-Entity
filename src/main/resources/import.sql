@@ -91,11 +91,11 @@ INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quant
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (88,'CN','Chine',28,30,18);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (89,'CN','Chine',28,30,19);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (90,'CN','Chine',28,30,20);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (91,'JP','Japon',20.6,1);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (92,'JP','Japon',20.6,2);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (93,'JP','Japon',20.6,3);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (94,'JP','Japon',20.6,4);
-INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (95,'JP','Japon',20.6,5);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (91,'JP','Japon',20.6,22,1);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (92,'JP','Japon',20.6,22,2);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (93,'JP','Japon',20.6,22,3);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (94,'JP','Japon',20.6,22,4);
+INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (95,'JP','Japon',20.6,22,5);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (96,'JP','Japon',22,24,6);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (97,'JP','Japon',22,24,7);
 INSERT INTO `delivery` (`id`,`codePays`,`name`,`rate`,`rateInternational`,`quantity`)VALUES (98,'JP','Japon',22,24,8);
